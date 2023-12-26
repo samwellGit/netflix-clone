@@ -1,0 +1,31 @@
+.row {
+  margin-bottom: 20px; /* Example margin for spacing between rows */
+}
+
+.row h1 {
+  /* Your styles for the title in the row */
+  font-size: 1.5em;
+  /* Add other styles as needed */
+}
+
+.row_posters {
+  display: flex;
+  overflow-x: scroll; /* Enable horizontal scrolling for posters */
+  padding: 20px 0; /* Example padding for the posters row */
+}
+
+.row_posters::-webkit-scrollbar {
+  display: none; /* Hide scrollbars for a cleaner look (only on webkit browsers) */
+}
+
+.row_posters img {
+  width: 150px; /* Example width for each poster */
+  max-height: 250px; /* Example maximum height for each poster */
+  object-fit: contain; /* Adjust image positioning within the space */
+  margin-right: 10px; /* Example margin between posters */
+  transition: transform 0.2s ease-in-out; /* Example transition effect */
+}
+
+.row_posters img:hover {
+  transform: scale(1.08); /* Example hover effect - increase size on hover */
+}
